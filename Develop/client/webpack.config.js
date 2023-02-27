@@ -17,20 +17,12 @@ module.exports = () => {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
-    plugins: [
-      
-    ],
-
-    module: {
-      rules: [
-        
-      ],
-    },
+    
     plugins: [
       // Webpack plugin that generates our html file and injects our bundles. 
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'Contact Cards'
+        title: 'JATE'
       }),
      
       // Injects our custom service worker
